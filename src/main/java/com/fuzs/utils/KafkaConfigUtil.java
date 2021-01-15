@@ -61,6 +61,13 @@ public class KafkaConfigUtil {
         return env.addSource(consumer);
     }
 
+    public static DataStreamSource<String> buildStringSource(StreamExecutionEnvironment env) {
+        ParameterTool parameterTool = (ParameterTool)env.getConfig().getGlobalJobParameters();
+        String topic = parameterTool.getRequired(METRICS_TOPIC);
+        Long time = parameterTool.getLong(CONSUMER_FROM_TIME,0L);
+        return buildStringSource(env,topic,time);
+    }
+
     public static DataStreamSource<String> buildStringSource(StreamExecutionEnvironment env,String topic,Long time){
         ParameterTool parameterTool = (ParameterTool) env.getConfig().getGlobalJobParameters();
         Properties props = buildKafkaProps(parameterTool);
