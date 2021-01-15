@@ -16,6 +16,6 @@ import lombok.ToString;
 public class MetricEvent {
     private String name;
     private Long timestamp;
-    private Map<String,String> fields;
+    private Map<String,Object> fields;
     private Map<String,String> tags;
 }

@@ -40,6 +40,5 @@ public class App {
         },
         parameterTool);
         env.execute();
-        
     }
 }

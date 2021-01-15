@@ -4,6 +4,7 @@ import java.util.Properties;
 
 import static com.fuzs.constant.PropertiesConstant.*;
 
+import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -51,6 +52,21 @@ public class KafkaConfigUtil {
         FlinkKafkaConsumer011<MetricEvent> consumer = new FlinkKafkaConsumer011<>(
             topic,
             new MetricEventSchema(),
+            props
+        );
+        if(time != 0L){
+            Map<KafkaTopicPartition,Long> partitionOffset = buildOffsetByTime(props,parameterTool,time);
+            consumer.setStartFromSpecificOffsets(partitionOffset);
+        }
+        return env.addSource(consumer);
+    }
+
+    public static DataStreamSource<String> buildStringSource(StreamExecutionEnvironment env,String topic,Long time){
+        ParameterTool parameterTool = (ParameterTool) env.getConfig().getGlobalJobParameters();
+        Properties props = buildKafkaProps(parameterTool);
+        FlinkKafkaConsumer011<String> consumer = new FlinkKafkaConsumer011<>(
+            topic,
+            new SimpleStringSchema(),
             props
         );
         if(time != 0L){
