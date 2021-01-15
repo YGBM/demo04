@@ -1,0 +1,371 @@
+[main] WARN org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer09 - Ignoring configured key DeSerializer (key.deserializer)
+[main] WARN org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer09 - Ignoring configured value DeSerializer (value.deserializer)
+[main] INFO org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option Key: 'taskmanager.cpu.cores' , default: null (fallback keys: []) required for local execution is not set, setting it to its default value 1.7976931348623157E308
+[main] INFO org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option Key: 'taskmanager.memory.task.heap.size' , default: null (fallback keys: []) required for local execution is not set, setting it to its default value 9223372036854775807 bytes
+[main] INFO org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option Key: 'taskmanager.memory.task.off-heap.size' , default: 0 bytes (fallback keys: []) required for local execution is not set, setting it to its default value 9223372036854775807 bytes
+[main] INFO org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option Key: 'taskmanager.memory.network.min' , default: 64 mb (fallback keys: [{key=taskmanager.network.memory.min, isDeprecated=true}]) required for local execution is not set, setting it to its default value 64 mb
+[main] INFO org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option Key: 'taskmanager.memory.network.max' , default: 1 gb (fallback keys: [{key=taskmanager.network.memory.max, isDeprecated=true}]) required for local execution is not set, setting it to its default value 64 mb
+[main] INFO org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option Key: 'taskmanager.memory.managed.size' , default: null (fallback keys: [{key=taskmanager.memory.size, isDeprecated=true}]) required for local execution is not set, setting it to its default value 128 mb
+[main] INFO org.apache.flink.runtime.minicluster.MiniCluster - Starting Flink Mini Cluster
+[main] INFO org.apache.flink.runtime.minicluster.MiniCluster - Starting Metrics Registry
+[main] INFO org.apache.flink.runtime.metrics.MetricRegistryImpl - No metrics reporter configured, no metrics will be exposed/reported.
+[main] INFO org.apache.flink.runtime.minicluster.MiniCluster - Starting RPC Service(s)
+[flink-akka.actor.default-dispatcher-2] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[main] INFO org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils - Trying to start actor system at :0
+[flink-metrics-2] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[flink-metrics-2] INFO akka.remote.Remoting - Starting remoting
+[flink-metrics-2] INFO akka.remote.Remoting - Remoting started; listening on addresses :[akka.tcp://flink-metrics@127.0.0.1:51462]
+[main] INFO org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils - Actor system started at akka.tcp://flink-metrics@127.0.0.1:51462
+[main] INFO org.apache.flink.runtime.rpc.akka.AkkaRpcService - Starting RPC endpoint for org.apache.flink.runtime.metrics.dump.MetricQueryService at akka://flink-metrics/user/MetricQueryService .
+[main] INFO org.apache.flink.runtime.minicluster.MiniCluster - Starting high-availability services
+[main] INFO org.apache.flink.runtime.blob.BlobServer - Created BLOB server storage directory /var/folders/6s/rw3mdd6n1_n4n99c8cn07ph40000gn/T/blobStore-9cd3c4b9-0624-4490-8d61-64f4031b6b63
+[main] INFO org.apache.flink.runtime.blob.BlobServer - Started BLOB server at 0.0.0.0:51463 - max concurrent requests: 50 - max backlog: 1000
+[main] INFO org.apache.flink.runtime.blob.PermanentBlobCache - Created BLOB cache storage directory /var/folders/6s/rw3mdd6n1_n4n99c8cn07ph40000gn/T/blobStore-24586ef0-a7d8-4b81-93ba-bb30f1c2e2d4
+[main] INFO org.apache.flink.runtime.blob.TransientBlobCache - Created BLOB cache storage directory /var/folders/6s/rw3mdd6n1_n4n99c8cn07ph40000gn/T/blobStore-5c08a41d-e2af-443c-956b-4adfabf170c7
+[main] INFO org.apache.flink.runtime.minicluster.MiniCluster - Starting 1 TaskManger(s)
+[main] INFO org.apache.flink.runtime.taskexecutor.TaskManagerRunner - Starting TaskManager with ResourceID: 63ce393e-abbf-4b64-be27-afd1b1da9e68
+[main] INFO org.apache.flink.runtime.taskexecutor.TaskManagerServices - Temporary file directory '/var/folders/6s/rw3mdd6n1_n4n99c8cn07ph40000gn/T': total 233 GB, usable 56 GB (24.03% usable)
+[main] INFO org.apache.flink.runtime.io.disk.FileChannelManagerImpl - FileChannelManager uses directory /var/folders/6s/rw3mdd6n1_n4n99c8cn07ph40000gn/T/flink-io-eeadbbbf-951d-4045-90d6-4059c5618f64 for spill files.
+[main] INFO org.apache.flink.runtime.io.disk.FileChannelManagerImpl - FileChannelManager uses directory /var/folders/6s/rw3mdd6n1_n4n99c8cn07ph40000gn/T/flink-netty-shuffle-610a2e4a-0e8f-4881-bbe5-ac2cb894f6f3 for spill files.
+[main] INFO org.apache.flink.runtime.io.network.buffer.NetworkBufferPool - Allocated 64 MB for network buffer pool (number of memory segments: 2048, bytes per segment: 32768).
+[main] INFO org.apache.flink.runtime.io.network.NettyShuffleEnvironment - Starting the network environment and its components.
+[main] INFO org.apache.flink.runtime.taskexecutor.KvStateService - Starting the kvState service and its components.
+[main] INFO org.apache.flink.runtime.taskexecutor.TaskManagerConfiguration - Messages have a max timeout of 10000 ms
+[main] INFO org.apache.flink.runtime.rpc.akka.AkkaRpcService - Starting RPC endpoint for org.apache.flink.runtime.taskexecutor.TaskExecutor at akka://flink/user/taskmanager_0 .
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.taskexecutor.JobLeaderService - Start job leader service.
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.filecache.FileCache - User file cache uses directory /var/folders/6s/rw3mdd6n1_n4n99c8cn07ph40000gn/T/flink-dist-cache-7e6f3a3f-8480-4bd6-be12-4288a2c3c894
+[main] INFO org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint - Starting rest endpoint.
+[main] WARN org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+[main] WARN org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'Key: 'web.log.path' , default: null (fallback keys: [{key=jobmanager.web.log.path, isDeprecated=true}])'.
+[main] INFO org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint - Failed to load web based job submission extension. Probable reason: flink-runtime-web is not in the classpath.
+[main] INFO org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint - Rest endpoint listening at localhost:51464
+[main] INFO org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Proposing leadership to contender http://localhost:51464
+[mini-cluster-io-thread-1] INFO org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint - http://localhost:51464 was granted leadership with leaderSessionID=cd615359-ec83-4f2a-8776-b8e8fc1fbe86
+[mini-cluster-io-thread-1] INFO org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Received confirmation of leadership for leader http://localhost:51464 , session=cd615359-ec83-4f2a-8776-b8e8fc1fbe86
+[main] INFO org.apache.flink.runtime.rpc.akka.AkkaRpcService - Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.StandaloneResourceManager at akka://flink/user/resourcemanager .
+[main] INFO org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Proposing leadership to contender LeaderContender: DefaultDispatcherRunner
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Proposing leadership to contender LeaderContender: StandaloneResourceManager
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.resourcemanager.StandaloneResourceManager - ResourceManager akka://flink/user/resourcemanager was granted leadership with fencing token 8e966cf035cdbac7f112fd2a2dc5424d
+[main] INFO org.apache.flink.runtime.minicluster.MiniCluster - Flink Mini Cluster started successfully
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.resourcemanager.slotmanager.SlotManagerImpl - Starting the SlotManager.
+[mini-cluster-io-thread-2] INFO org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess - Start SessionDispatcherLeaderProcess.
+[flink-akka.actor.default-dispatcher-4] INFO org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Received confirmation of leadership for leader akka://flink/user/resourcemanager , session=f112fd2a-2dc5-424d-8e96-6cf035cdbac7
+[mini-cluster-io-thread-5] INFO org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess - Recover all persisted job graphs.
+[mini-cluster-io-thread-5] INFO org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess - Successfully recovered 0 persisted job graphs.
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.taskexecutor.TaskExecutor - Connecting to ResourceManager akka://flink/user/resourcemanager(8e966cf035cdbac7f112fd2a2dc5424d).
+[mini-cluster-io-thread-5] INFO org.apache.flink.runtime.rpc.akka.AkkaRpcService - Starting RPC endpoint for org.apache.flink.runtime.dispatcher.StandaloneDispatcher at akka://flink/user/dispatcher .
+[flink-akka.actor.default-dispatcher-4] INFO org.apache.flink.runtime.taskexecutor.TaskExecutor - Resolved ResourceManager address, beginning registration
+[flink-akka.actor.default-dispatcher-4] INFO org.apache.flink.runtime.taskexecutor.TaskExecutor - Registration at ResourceManager attempt 1 (timeout=100ms)
+[mini-cluster-io-thread-5] INFO org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Received confirmation of leadership for leader akka://flink/user/dispatcher , session=5f28e86b-a155-4b04-a300-36c5127215ef
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.resourcemanager.StandaloneResourceManager - Registering TaskManager with ResourceID 63ce393e-abbf-4b64-be27-afd1b1da9e68 (akka://flink/user/taskmanager_0) at ResourceManager
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.taskexecutor.TaskExecutor - Successful registration at resource manager akka://flink/user/resourcemanager under registration id de3f64687b58db2dc6b0d0aa92e436b9.
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.dispatcher.StandaloneDispatcher - Received JobGraph submission b764a6651e63a13d823ff58def044b50 (Flink Streaming Job).
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.dispatcher.StandaloneDispatcher - Submitting job b764a6651e63a13d823ff58def044b50 (Flink Streaming Job).
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.rpc.akka.AkkaRpcService - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/jobmanager_1 .
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.JobMaster - Initializing job Flink Streaming Job (b764a6651e63a13d823ff58def044b50).
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.JobMaster - Using restart back off time strategy FixedDelayRestartBackoffTimeStrategy(maxNumberRestartAttempts=4, backoffTimeMS=60000) for Flink Streaming Job (b764a6651e63a13d823ff58def044b50).
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.JobMaster - Running initialization on master for job Flink Streaming Job (b764a6651e63a13d823ff58def044b50).
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.JobMaster - Successfully ran initialization on master in 0 ms.
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.JobMaster - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionStrategy - Start building failover regions.
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionStrategy - Created 1 failover regions.
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.JobMaster - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionStrategy@60256556 for Flink Streaming Job (b764a6651e63a13d823ff58def044b50).
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Proposing leadership to contender akka://flink/user/jobmanager_1
+[mini-cluster-io-thread-11] INFO org.apache.flink.runtime.jobmaster.JobManagerRunnerImpl - JobManager runner for job Flink Streaming Job (b764a6651e63a13d823ff58def044b50) was granted leadership with session id 352a9879-61a4-4171-ac39-192ac8c8df7c at akka://flink/user/jobmanager_1.
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.JobMaster - Starting execution of job Flink Streaming Job (b764a6651e63a13d823ff58def044b50) under job master id ac39192ac8c8df7c352a987961a44171.
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.JobMaster - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.EagerSchedulingStrategy]
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.executiongraph.ExecutionGraph - Job Flink Streaming Job (b764a6651e63a13d823ff58def044b50) switched from state CREATED to RUNNING.
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.executiongraph.ExecutionGraph - Source: Custom Source -> Sink: Print to Std. Out (1/1) (e0db66cf3e404eb91eb590824a9e15b0) switched from CREATED to SCHEDULED.
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.slotpool.SlotPoolImpl - Cannot serve slot request, no ResourceManager connected. Adding as pending request [SlotRequestId{5def1c963734a4ad35ea10bff6d2ca9f}]
+[jobmanager-future-thread-1] INFO org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Received confirmation of leadership for leader akka://flink/user/jobmanager_1 , session=352a9879-61a4-4171-ac39-192ac8c8df7c
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.JobMaster - Connecting to ResourceManager akka://flink/user/resourcemanager(8e966cf035cdbac7f112fd2a2dc5424d)
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.JobMaster - Resolved ResourceManager address, beginning registration
+[flink-akka.actor.default-dispatcher-2] INFO org.apache.flink.runtime.jobmaster.JobMaster - Registration at ResourceManager attempt 1 (timeout=100ms)
+[flink-akka.actor.default-dispatcher-4] INFO org.apache.flink.runtime.resourcemanager.StandaloneResourceManager - Registering job manager ac39192ac8c8df7c352a987961a44171@akka://flink/user/jobmanager_1 for job b764a6651e63a13d823ff58def044b50.
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.resourcemanager.StandaloneResourceManager - Registered job manager ac39192ac8c8df7c352a987961a44171@akka://flink/user/jobmanager_1 for job b764a6651e63a13d823ff58def044b50.
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.jobmaster.JobMaster - JobManager successfully registered at ResourceManager, leader id: 8e966cf035cdbac7f112fd2a2dc5424d.
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.jobmaster.slotpool.SlotPoolImpl - Requesting new slot [SlotRequestId{5def1c963734a4ad35ea10bff6d2ca9f}] and profile ResourceProfile{UNKNOWN} from resource manager.
+[flink-akka.actor.default-dispatcher-4] INFO org.apache.flink.runtime.resourcemanager.StandaloneResourceManager - Request slot with profile ResourceProfile{UNKNOWN} for job b764a6651e63a13d823ff58def044b50 with allocation id 683345326fd56962fadb4c7502ca51b7.
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.taskexecutor.TaskExecutor - Receive slot request 683345326fd56962fadb4c7502ca51b7 for job b764a6651e63a13d823ff58def044b50 from resource manager with leader id 8e966cf035cdbac7f112fd2a2dc5424d.
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.taskexecutor.TaskExecutor - Allocated slot for 683345326fd56962fadb4c7502ca51b7.
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.taskexecutor.JobLeaderService - Add job b764a6651e63a13d823ff58def044b50 for job leader monitoring.
+[mini-cluster-io-thread-3] INFO org.apache.flink.runtime.taskexecutor.JobLeaderService - Try to register at job manager akka://flink/user/jobmanager_1 with leader id 352a9879-61a4-4171-ac39-192ac8c8df7c.
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.taskexecutor.JobLeaderService - Resolved JobManager address, beginning registration
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.taskexecutor.JobLeaderService - Registration at JobManager attempt 1 (timeout=100ms)
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.taskexecutor.JobLeaderService - Successful registration at job manager akka://flink/user/jobmanager_1 for job b764a6651e63a13d823ff58def044b50.
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.taskexecutor.TaskExecutor - Establish JobManager connection for job b764a6651e63a13d823ff58def044b50.
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.taskexecutor.TaskExecutor - Offer reserved slots to the leader of job b764a6651e63a13d823ff58def044b50.
+[flink-akka.actor.default-dispatcher-4] INFO org.apache.flink.runtime.executiongraph.ExecutionGraph - Source: Custom Source -> Sink: Print to Std. Out (1/1) (e0db66cf3e404eb91eb590824a9e15b0) switched from SCHEDULED to DEPLOYING.
+[flink-akka.actor.default-dispatcher-4] INFO org.apache.flink.runtime.executiongraph.ExecutionGraph - Deploying Source: Custom Source -> Sink: Print to Std. Out (1/1) (attempt #0) to 63ce393e-abbf-4b64-be27-afd1b1da9e68 @ localhost (dataPort=-1)
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.taskexecutor.TaskExecutor - Received task Source: Custom Source -> Sink: Print to Std. Out (1/1).
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.flink.runtime.taskmanager.Task - Source: Custom Source -> Sink: Print to Std. Out (1/1) (e0db66cf3e404eb91eb590824a9e15b0) switched from CREATED to DEPLOYING.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.flink.runtime.taskmanager.Task - Creating FileSystem stream leak safety net for task Source: Custom Source -> Sink: Print to Std. Out (1/1) (e0db66cf3e404eb91eb590824a9e15b0) [DEPLOYING]
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl - Activate slot 683345326fd56962fadb4c7502ca51b7.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.flink.runtime.taskmanager.Task - Loading JAR files for task Source: Custom Source -> Sink: Print to Std. Out (1/1) (e0db66cf3e404eb91eb590824a9e15b0) [DEPLOYING].
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.flink.runtime.taskmanager.Task - Registering task at network: Source: Custom Source -> Sink: Print to Std. Out (1/1) (e0db66cf3e404eb91eb590824a9e15b0) [DEPLOYING].
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.flink.runtime.taskmanager.Task - Source: Custom Source -> Sink: Print to Std. Out (1/1) (e0db66cf3e404eb91eb590824a9e15b0) switched from DEPLOYING to RUNNING.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.flink.streaming.runtime.tasks.StreamTask - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+[flink-akka.actor.default-dispatcher-3] INFO org.apache.flink.runtime.executiongraph.ExecutionGraph - Source: Custom Source -> Sink: Print to Std. Out (1/1) (e0db66cf3e404eb91eb590824a9e15b0) switched from DEPLOYING to RUNNING.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.flink.api.java.typeutils.TypeExtractor - class org.apache.flink.streaming.connectors.kafka.internals.KafkaTopicPartition does not contain a setter for field topic
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.flink.api.java.typeutils.TypeExtractor - Class class org.apache.flink.streaming.connectors.kafka.internals.KafkaTopicPartition cannot be used as a POJO type because not all fields are valid POJO fields, and must be processed as GenericType. Please read the Flink documentation on "Data Types & Serialization" for details of the effect on performance.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase - Consumer subtask 0 has no restore state.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.10.14.48:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = metrics-group-test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'gopherProxySet' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'awt.toolkit' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'stream.checkpoint.interval' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'file.encoding.pkg' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.specification.version' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.cpu.isalist' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.jnu.encoding' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.class.path' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'stream.sink.parallelism' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.vendor' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.arch.data.model' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'stream.parallelism' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vendor.url' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.timezone' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'metrics.topic' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'os.name' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'kafka.sink.topic' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.specification.version' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.country' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.java.launcher' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.boot.library.path' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.java.command' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'stream.checkpoint.enable' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.cpu.endian' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.home' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.language' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.specification.vendor' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.home' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'kafka.brokers' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'file.separator' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'line.separator' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.specification.vendor' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'zookeeper.connect' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.specification.name' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'kafka.group.id' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.awt.graphicsenv' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'kafka.zookeeper.connect' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.boot.class.path' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.management.compiler' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.runtime.version' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.name' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'path.separator' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'os.version' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.endorsed.dirs' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.runtime.name' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'file.encoding' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'kafka.sink.brokers' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.name' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vendor.url.bug' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.io.tmpdir' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.version' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.dir' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'os.arch' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.specification.name' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.awt.printerjob' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.os.patch.level' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'logs.topic' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.library.path' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.info' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vendor' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.version' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.ext.dirs' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.io.unicode.encoding' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.class.version' was supplied but isn't a known config.
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version : 0.11.0.2
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : 73be1e1168f91ee2
+[Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase - Consumer subtask 0 will start reading the following 1 partitions from the committed group offsets in Kafka: [KafkaTopicPartition{topic='zhisheng', partition=0}]
+[Legacy Source Thread - Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase - Consumer subtask 0 creating fetcher with offsets {KafkaTopicPartition{topic='zhisheng', partition=0}=-915623761773}.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.10.14.48:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = metrics-group-test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'gopherProxySet' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'awt.toolkit' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'stream.checkpoint.interval' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'file.encoding.pkg' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.specification.version' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.cpu.isalist' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.jnu.encoding' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.class.path' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'stream.sink.parallelism' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.vendor' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.arch.data.model' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'stream.parallelism' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vendor.url' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.timezone' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'metrics.topic' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'os.name' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'kafka.sink.topic' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.specification.version' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.country' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.java.launcher' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.boot.library.path' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.java.command' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'stream.checkpoint.enable' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.cpu.endian' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.home' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.language' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.specification.vendor' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.home' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'kafka.brokers' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'file.separator' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'line.separator' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.specification.vendor' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'zookeeper.connect' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.specification.name' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'kafka.group.id' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.awt.graphicsenv' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'kafka.zookeeper.connect' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.boot.class.path' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.management.compiler' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.runtime.version' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.name' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'path.separator' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'os.version' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.endorsed.dirs' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.runtime.name' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'file.encoding' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'kafka.sink.brokers' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.name' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vendor.url.bug' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.io.tmpdir' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.version' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'user.dir' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'os.arch' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.specification.name' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.awt.printerjob' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.os.patch.level' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'logs.topic' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.library.path' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.info' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vendor' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.vm.version' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.ext.dirs' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'sun.io.unicode.encoding' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] WARN org.apache.kafka.clients.consumer.ConsumerConfig - The configuration 'java.class.version' was supplied but isn't a known config.
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version : 0.11.0.2
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : 73be1e1168f91ee2
+[Kafka 0.10 Fetcher for Source: Custom Source -> Sink: Print to Std. Out (1/1)] INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator - Discovered coordinator 10.10.14.48:9092 (id: 2147483647 rack: null) for group metrics-group-test.
+[TaskExecutorLocalStateStoresManager shutdown hook] INFO org.apache.flink.runtime.state.TaskExecutorLocalStateStoresManager - Shutting down TaskExecutorLocalStateStoresManager.
+[PermanentBlobCache shutdown hook] INFO org.apache.flink.runtime.blob.PermanentBlobCache - Shutting down BLOB cache
+[TransientBlobCache shutdown hook] INFO org.apache.flink.runtime.blob.TransientBlobCache - Shutting down BLOB cache
+[BlobServer shutdown hook] INFO org.apache.flink.runtime.blob.BlobServer - Stopped BLOB server at 0.0.0.0:51463
+[FileCache shutdown hook] INFO org.apache.flink.runtime.filecache.FileCache - removed file cache directory /var/folders/6s/rw3mdd6n1_n4n99c8cn07ph40000gn/T/flink-dist-cache-7e6f3a3f-8480-4bd6-be12-4288a2c3c894
+[FileChannelManagerImpl-netty-shuffle shutdown hook] INFO org.apache.flink.runtime.io.disk.FileChannelManagerImpl - FileChannelManager removed spill file directory /var/folders/6s/rw3mdd6n1_n4n99c8cn07ph40000gn/T/flink-netty-shuffle-610a2e4a-0e8f-4881-bbe5-ac2cb894f6f3
+[FileChannelManagerImpl-io shutdown hook] INFO org.apache.flink.runtime.io.disk.FileChannelManagerImpl - FileChannelManager removed spill file directory /var/folders/6s/rw3mdd6n1_n4n99c8cn07ph40000gn/T/flink-io-eeadbbbf-951d-4045-90d6-4059c5618f64
